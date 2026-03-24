@@ -13,9 +13,9 @@ cmp rax, rbx
 jge .L_end  ; Pipeline Stall here!
 mov rdx, [rbp] 
 .L_end:
-; AFTER (Numba Zero-Overhead)
-vmovaps ymm0, [r12+r8*16] ; Vector load
-vaddpd ymm1, ymm0, ymm2   ; Vector add (No jumps!)
-vmovaps ymm3, [r14]       ; Store result
+; AFTER (Optimized Vector Path)
+vmovapd zmm0, [rdi + rax*8]    ; Load 8 double-precision prices into ZMM
+vcmppd  k1, zmm0, zmm1, 13     ; Compare prices into opmask register k1 (GE)
+vblendmpd zmm2 {k1}, zmm0, zmm3 ; Branchless select based on mask
 
 
