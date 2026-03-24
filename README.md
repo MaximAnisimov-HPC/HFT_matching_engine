@@ -20,7 +20,7 @@ The following results were captured on a power-constrained environment (**locked
 
 | Metric | Result (at 0.55 GHz) | Result (at 4.5 GHz) | Result All Cores(16) (at 4.5 GHz) |
 | :--- | :--- | :--- | :--- |
-| **Min Latency** | 8,200 ns | ~1,000 ns | 	0.55 ns |
+| **Min Latency** | 8,200 ns | ~1,000 ns | 	**~0.55 ns** |
 | **Avg Latency (Tick-to-Trade)** | **9.27 ns** | **~1.1 ns** | **~0.68 ns** |
 | **P99 Latency (Jitter)** | 17,000 ns | ~1,700 ns | **~0.82 ns** |
 | **Throughput** | 107,834 txn/sec | **~880,000 txn/sec** | **~1.46 B txn/sec** |
