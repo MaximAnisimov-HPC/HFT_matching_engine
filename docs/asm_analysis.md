@@ -1,15 +1,15 @@
-# 🔬 Automated Assembly & ILP Analysis
+# Automated Assembly & ILP Analysis
 
 To ensure maximum hardware saturation, I developed a custom audit tool that inspects the generated **LLVM-compiled x86_64 Assembly** for our core Matching Engine.
 
-### 📊 Compiled Kernel Stats (Verification)
+### Compiled Kernel Stats (Verification)
 Based on the automated audit of the `match_against_book` hot-path:
 
 *   **SIMD Utilization (zmm/ymm):** `X` instructions — *Proves 512-bit vectorization.*
 *   **Vector Ops (v-prefix):** `X` operations — *Confirmed high-density compute path.*
 *   **Branching Efficiency:** `X` jumps (Tact Loss) — *Verified branchless execution via arithmetic masking.*
 
-### 🛠 Automated Audit Logic
+### Automated Audit Logic
 I use the following Python-to-ASM inspection pipeline to guarantee that the compiler generates **straight-line, zero-overhead machine code**:
 
 ```python
