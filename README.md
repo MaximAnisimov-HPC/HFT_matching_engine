@@ -7,11 +7,11 @@ To verify the **Zero-Overhead** architecture, I conducted a stress test of the M
 ### Benchmark Execution Proof
 The following results were captured on a power-constrained environment (**locked at 0.55 GHz**) to demonstrate architectural efficiency and instruction-level determinism under extreme thermal throttling scenarios.
 
-![Tick-to-Trade Latency Benchmark](docs/benchmark_on_trottled_CPU_0.55HZ.png)
+![Tick-to-Trade Latency Benchmark](assets/benchmark_on_trottled_CPU_0.55HZ.png)
 ## Another Results on **Unlocked CPU ( >4.5GHz).**
-![Tick_to_Trade Latency Benchmark Unlocked CPU](docs/benchmark_on_CPU_4.5HZ.png)
+![Tick_to_Trade Latency Benchmark Unlocked CPU](assets/benchmark_on_CPU_4.5HZ.png)
 ## Best Results on **Unlocked CPU (16 CORES), ( >4.5GHz).** 
-![Tick_to_Trade Latency Benchmark Unlocked CPU](docs/ALL_CORES(16)_benchmark_on_CPU_4.5HZ.png)
+![Tick_to_Trade Latency Benchmark Unlocked CPU](assets/ALL_CORES(16)_benchmark_on_CPU_4.5HZ.png)
 
 
 
