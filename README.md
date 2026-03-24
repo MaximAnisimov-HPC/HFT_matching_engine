@@ -20,7 +20,7 @@ The following results were captured on a power-constrained environment (**locked
 | :--- | :--- | :--- |
 | **Min Latency** | 8,200 ns | ~1,000 ns |
 | **Avg Latency (Tick-to-Trade)** | **9.27 µs** | **~1.1 µs** |
-| **P99 Latency (Jitter)** | 17,000 ns | ~2,100 ns |
+| **P99 Latency (Jitter)** | 17,000 ns | ~1,700 ns |
 | **Throughput** | 107,834 txn/sec | **~880,000 txn/sec** |
 
 ### Engineering Breakthroughs Observed:
