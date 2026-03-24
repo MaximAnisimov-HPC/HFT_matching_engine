@@ -5,7 +5,7 @@ Reduce pipeline stalls and branch mispredictions by inspecting generated LLVM IR
 
 ## Key Changes Implemented
 
-### 1. JMP Elimination (Branch Prediction)
+### JMP Elimination (Branch Prediction)
 **Before:** Standard Python `if/else` generates unconditional jumps (`jmp`) in the assembly, causing the CPU to flush the pipeline on every iteration.
 ```asm
 ; BEFORE (Standard Python Loop)
