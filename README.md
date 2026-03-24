@@ -14,7 +14,8 @@ The following results were captured on a power-constrained environment (**locked
 ![Tick_to_Trade Latency Benchmark Unlocked CPU](assets/ALL_CORES(16)_benchmark_on_CPU_4.5HZ.png)
 
 
-
+### FEEL The Difference
+![Performance Visualisation](assets/Performance_Benchmark_Visualisationj.png)
 
 ### Statistical Analysis
 
