@@ -16,7 +16,7 @@ I use the following Python-to-ASM inspection pipeline to guarantee that the comp
 asm_dict = func_name.inspect_asm()
 full_asm = list(asm_dict.values())[0]
 
-# Фильтрация: Ищем самый длинный блок между метками (обычно это цикл)
+# Filtering find longest block
 lines = full_asm.split('\n')
 clean_asm = []
 is_loop = False
@@ -25,7 +25,7 @@ stats = {"SIMD (zmm/ymm)": 0, "Jumps (Tact Loss)": 0, "Vector Ops (v-prefix)": 0
 
 for line in lines:
     l = line.strip().lower()
-    # Начинаем захват, когда видим метку цикла
+    # if we find mark okay start record
     if l.startswith('.lbb'): is_loop = True
     if is_loop:
         clean_asm.append(line)
@@ -33,10 +33,10 @@ for line in lines:
         if 'zmm' in l or 'ymm' in l: stats["SIMD (zmm/ymm)"] += 1
         if l.startswith('j') and not l.startswith('jmp .lbb'): stats["Jumps (Tact Loss)"] += 1
         if l.startswith('v') and not l.startswith('vzeroupper'): stats["Vector Ops (v-prefix)"] += 1
-    # Останавливаем захват в конце функции
+    # end at the end of func
     if 'retq' in l: is_loop = False
 
-# Запись только "Мяса"
+# write only needed
 with open(f"optimized_analysis_{func_name}.asm", "w") as f:
     f.write(f"--- PERFORMANCE STATS ---\n")
     for k, v in stats.items(): f.write(f"{k}: {v}\n")
