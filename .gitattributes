@@ -1,0 +1,3 @@
+*.asm linguist-detectable=true
+*.asm linguist-documentation=false
+*.asm linguist-language=Assembly
