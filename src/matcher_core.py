@@ -13,7 +13,7 @@ def match_against_book(aggregator_order, book_prices, book_sizes, book_count):
     
     total_traded = 0.0
     
-    # go through order book (book_prices/book_sizes - sorted arrays!)
+    # go through order book (book_prices|book_sizes - sorted arrays!)
     for i in range(book_count):
         if agg_qty <= 0:
             break
