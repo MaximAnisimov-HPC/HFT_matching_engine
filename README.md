@@ -1,6 +1,6 @@
 ---
 
-## Core logic is AOT-compiled to native machine code. See /docs for the verified loop assembly.
+## **Core logic is AOT-compiled to native machine code. See /docs for the verified loop assembly.**
 
 ## Performance Verification: Sub-10µs Determinism
 
