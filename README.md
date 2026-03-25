@@ -1,5 +1,7 @@
 ---
 
+## Core logic is AOT-compiled to native machine code. See /docs for the verified loop assembly.
+
 ## Performance Verification: Sub-10µs Determinism
 
 To verify the **Zero-Overhead** architecture, I conducted a stress test of the Matching Engine using 1,000,000 continuous iterations. The goal was to prove that Python can achieve **C++ hardware latency** by bypassing the interpreter and saturating the CPU pipeline.
