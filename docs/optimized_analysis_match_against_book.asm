@@ -4,7 +4,7 @@ Jumps (Tact Loss): 25
 Vector Ops (v-prefix): 43
 Total Lines: 311
 
---- PRODUCTION-READY LOOP ASM ---
+--- READY LOOP ASM ---
 .LBB0_12:
 	incq	%r9
 	cmpq	%r9, %rax
