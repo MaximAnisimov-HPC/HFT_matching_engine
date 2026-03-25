@@ -4,7 +4,7 @@ Jumps (Tact Loss): 74
 Vector Ops (v-prefix): 61
 Total Lines: 880
 
---- PRODUCTION-READY LOOP ASM ---
+--- READY LOOP ASM ---
 .LBB0_10:
 	vmovaps	304(%rsp), %xmm6
 	vmovaps	320(%rsp), %xmm7
