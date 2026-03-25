@@ -5,7 +5,7 @@
 To verify the **Zero-Overhead** architecture, I conducted a stress test of the Matching Engine using 1,000,000 continuous iterations. The goal was to prove that Python can achieve **C++ hardware latency** by bypassing the interpreter and saturating the CPU pipeline.
 
 ### Benchmark Execution Proof
-The following results were captured on a power-constrained environment (**locked at 0.55 GHz**) to demonstrate architectural efficiency and instruction-level determinism under extreme thermal throttling scenarios.
+The following results were captured on a power-constrained environment (**locked at 2.45 GHz**) to demonstrate architectural efficiency and instruction-level determinism under extreme thermal throttling scenarios.
 
 ![Tick-to-Trade Latency Benchmark](assets/benchmark_on_trottled_CPU_0.55HZ.png)
 ## Another Results on **Unlocked CPU ( >4.5GHz).**
